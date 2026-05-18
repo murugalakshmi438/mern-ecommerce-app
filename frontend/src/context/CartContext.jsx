@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
       if (!token) return;
 
       const res = await axios.get(
-        "http://localhost:5000/api/cart",
+        "https://mern-backend-o98s.onrender.com/api/cart",
         {
           headers: {
             Authorization: `Bearer ${token}`

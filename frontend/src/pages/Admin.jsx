@@ -18,7 +18,7 @@ const Admin = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://localhost:5000/api/products/add",
+        "https://mern-backend-o98s.onrender.com/api/products/add",
 
         {
           title,

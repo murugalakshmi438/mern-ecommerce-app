@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
     }
 
     const res = await axios.post(
-      "http://localhost:5000/api/cart/add",
+      "https://mern-backend-o98s.onrender.com/api/cart/add",
       {
         productId: product._id,
         quantity: 1

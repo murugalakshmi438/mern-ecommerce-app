@@ -17,7 +17,7 @@ const Checkout = () => {
         0
       );
 
-      await axios.post("http://localhost:5000/api/orders", {
+      await axios.post("https://mern-backend-o98s.onrender.com/api/orders", {
         userId: user._id,
         items: cart,
         totalPrice,

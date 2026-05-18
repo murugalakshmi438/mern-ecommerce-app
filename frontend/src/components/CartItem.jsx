@@ -8,7 +8,7 @@ const CartItem = ({ item }) => {
   const removeFromCart = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/cart/${id}`,
+        `https://mern-backend-o98s.onrender.com/api/cart/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

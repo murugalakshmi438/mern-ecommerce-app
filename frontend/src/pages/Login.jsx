@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://mern-backend-o98s.onrender.com/api/auth/login",
         {
           email,
           password,
@@ -39,7 +39,7 @@ const Login = () => {
   const handleAdminLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/admin/login",
+        "https://mern-backend-o98s.onrender.com/api/auth/admin/login",
         {
           email,
           password,

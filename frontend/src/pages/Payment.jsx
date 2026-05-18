@@ -58,7 +58,7 @@ const Payment = () => {
 
       // 🧹 CLEAR BACKEND CART (SAFE)
       try {
-        await axios.delete("http://localhost:5000/api/cart/clear", {
+        await axios.delete("https://mern-backend-o98s.onrender.com/api/cart/clear", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

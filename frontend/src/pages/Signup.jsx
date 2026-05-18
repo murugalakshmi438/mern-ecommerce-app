@@ -17,7 +17,7 @@ const Signup = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://mern-backend-o98s.onrender.com/api/auth/signup",
         {
           name,
           email,

@@ -12,7 +12,7 @@ const Orders = () => {
     const fetchOrders = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/orders/user/${user._id}`
+          `https://mern-backend-o98s.onrender.com/api/orders/user/${user._id}`
         );
 
         setOrders(res.data);
